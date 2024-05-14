@@ -43,7 +43,7 @@ int	main(int argc, char **argv)
 		ft_printf("\033[33mTry: ./server\033[0m\n");
 		return (0);
 	}
-	pid = getpid();
+	pid = getpid();//what the hell is this doing here 
 	ft_printf("\033[94mPID\033[0m \033[96m->\033[0m %d\n", pid);
 	ft_printf("\033[90mWaiting for a message...\033[0m\n");
 	sig.sa_sigaction = ft_handler;
